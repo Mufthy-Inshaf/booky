@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.bookky.org</title>
+
+    <link rel="stylesheet"  href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="navbar">
+        <h1>
+            Bookky
+
+        </h1>
+
+
+    </div>
+
+    <div class="container">
+    	<div class="book-container">
+    		<h2> The Atomic Habbits </h2>
+    		<h5> James Clear</h5><br>
+    		<p> Your habits shape your identity, and your identity shapes your habits </p>
+    		<button onclick="deletebook(event)"> Delete</button>
+    	</div>
+    </div>
+
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+    	<h2>Add Book</h2>
+    	<form>
+    		<input type="text" placeholder="Book Title" id="book-title-input">
+    		<input type="text" placeholder="Book Author" id="book-author-input">
+    		<textarea placeholder="Short Discription" id="book-discription-input"></textarea>
+    		<!--<h5><a href="https://chatgpt.com/c/aa2ba4c3-7eed-4f65-a537-88903950b66d" style="position: fixed;text-align: right;color: black;text-decoration: none;padding-left: 525px;"> Help</a></h5> -->
+    		
+    		<button id="cancel-popup">Skip</button>
+    		<button id="Publish-book">Publish</button>
+    	</form>
+    </div>
+
+
+    <button class="add-button" id="add-pop"> + </button>
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
